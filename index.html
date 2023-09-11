@@ -1,54 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Coding Quiz</title>
-
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Fundamentals Quiz</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-  <div class="scores"><a href="highscores.html">View Highscores</a></div>
+  <!--header with view high score and time-->
+  <header>
+    <a href="#score-bank">View high scores</a>
 
-  <div class="timer">Time: <span id="time">0</span></div>
+    <div id="timer">Time: 0</div>
 
-  <div class="wrapper">
-    <div id="start-screen" class="start">
-      <h1>Coding Quiz Challenge</h1>
-      <p>
-        Try to answer the following code-related questions within the time
-        limit. Keep in mind that incorrect answers will penalize your
-        score/time by ten seconds!
+  </header>
+  <br>
+  <main>
+    <!--div for cover page-->
+    <div id="cover-page">
+      <h3>Coding Quiz Challenge</h3>
+      <p>Try to answer the following code-related questions within the time limit.
+        <br>
+        Keep in mind that incorrect answers will penalize your score/time by ten seconds!
       </p>
-      <button id="start">Start Quiz</button>
+      <btn class="start-quiz">Start Quiz</btn>
     </div>
 
-    <div id="questions" class="hide">
-      <h2 id="question-title">chfhhfhfh</h2>
-      <div id="choices" class="choices"><button>1</button></div>
-      <div id="choices" class="choices"><button>2</button></div>
-      <div id="choices" class="choices"><button>3</button></div>
-      <div id="choices" class="choices"><button>4</button></div>
+    <!---div for quiz-->
+    <div class="quiz">
+      <h3 class="ask"></h3>
+      <div id="choices">
+        <div class="choice1"></div>
+        <div class="choice2"></div>
+        <div class="choice3"></div>
+        <div class="choice4"></div>
+      </div>
     </div>
 
-    <div id="end-screen" class="hide">
-      <h2>All done!</h2>
-      <p>Your final score is <span id="final-score"></span>.</p>
-      <p>
-        Enter initials: <input type="text" id="initials" max="3" />
-        <button id="submit">Submit</button>
-      </p>
+    <!--div for logging high score-->
+    <div class="high-score">
+      <h3>All done!</h3>
+      <div class="finalscore"></div>
+      <br>
+      <div>Enter initials:</div><input type="text" name="initials" id="initials">
+      <btn class="submit">Submit</btn>
     </div>
-    <div id="msg"></div>
-    <div id="feedback" class="feedback hide"></div>
-  </div>
 
-  <script src="./assets/js/questions.js"></script>
+    <div class="correct">Correct!</div>
+    <div class="wrong">Wrong!</div>
+
+    <!--div for high score bank-->
+    <div id="score-bank">
+      <h3>High Scores</h3>
+      <ol id="scoredata"></ol>
+      <btn class=back>Go back</btn>
+      <btn class=clear>Clear high scores</btn>
+    </div>
+  </main>
+
   <script src="./assets/js/logic.js"></script>
-  <script src="./assets/js/scores.js"></script>
+  <script src="./assets/js/questions.js"></script>
 </body>
 
 </html>

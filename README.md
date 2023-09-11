@@ -41,7 +41,7 @@ Create a code quiz that contains the following requirements:
 
 The following image shows the web application's appearance and functionality:
 
-![password generator demo](./assets/password.png)
+![Timed coding demo](./assets/img/08-web-apis-challenge-demo.gif)
 
 ### Technologies Used
 
@@ -51,8 +51,8 @@ The following image shows the web application's appearance and functionality:
 
 ### Usage
 
-You can clone this repository using `git clone https://github.com/faladetimilehin/random-password-generator` or ssh `git clone git@github.com:faladetimilehin/random-password-generator.git`
+You can clone this repository using `git clone https://github.com/faladetimilehin/timed-coding-quiz` or ssh `git clone git@github.com:faladetimilehin/timed-coding-quiz.git`
 
 ### Deployment
 
-https://faladetimilehin.github.io/random-password-generator/
+https://faladetimilehin.github.io/timed-coding-quiz/

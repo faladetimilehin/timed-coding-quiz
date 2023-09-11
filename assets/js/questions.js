@@ -1,53 +1,48 @@
-const questions = [
+
+//quiz array and answer key
+var quizKey = [
   {
-    question: "What is the result of 2 + 2?",
-    options: ["3", "4", "5", "6"],
-    answer: "4"
-  },
-  {
-    question: "Which keyword is used to declare a variable in JavaScript?",
-    options: ["let", "var", "const", "all of the above"],
-    answer: "all of the above"
-  },
-  {
-    question: "What does DOM stand for?",
-    options: ["Document Object Model", "Display Object Mode", "Data Object Model", "Document Object Method"],
-    answer: "Document Object Model"
-  },
-  {
-    question: "Which built-in method calls a function for each element in the array?",
-    options: ["map()", "forEach()", "filter()", "reduce()"],
-    answer: "forEach()"
-  },
-  {
-    question: "What is the correct way to check if a variable is an array in JavaScript?",
-    options: ["typeof variable === 'array'", "variable instanceof Array", "Array.isArray(variable)", "variable.isArray()"],
-    answer: "Array.isArray(variable)"
-  },
-  {
-    question: "Which operator is used for strict equality comparison in JavaScript?",
-    options: ["=", "==", "===", "!=="],
-    answer: "==="
-  },
-  {
-    question: "What is the output of the following code?\n\nconsole.log(typeof null);",
-    options: ["object", "null", "undefined", "string"],
-    answer: "object"
-  },
-  {
-    question: "What is the correct way to create a new empty object in JavaScript?",
-    options: ["let obj = new Object();", "let obj = {}", "let obj = Object.create(null);", "All of the above"],
-    answer: "let obj = {};"
-  },
-  {
-    question: "What is the purpose of the 'use strict' directive in JavaScript?",
-    options: ["It enables strict type checking.", "It enables modern JavaScript features.", "It enforces more secure coding practices.", "It enables strict mode for better performance."],
-    answer: "It enforces more secure coding practices."
-  },
-  {
-    question: "Which method can be used to add a new element to the end of an array?",
-    options: ["push()", "pop()", "unshift()", "shift()"],
-    answer: "push()"
+    question: "Commonly used data types DO NOT include:",
+    choice1: "1. strings",
+    choice2: "2. booleans",
+    choice3: "3. alerts",
+    choice4: "4. numbers",
+    answer: "3. alerts",
   },
 
+  {
+    question: "The condition in an if/else statement is enclosed with ________.",
+    choice1: "1. quotes",
+    choice2: "2. curly brackets",
+    choice3: "3. parenthesis",
+    choice4: "4. square brackets",
+    answer: "3. parenthesis",
+  },
+
+  {
+    question: "Arrays in JavaScript can be used to store ________.",
+    choice1: "1. numbers and strings",
+    choice2: "2. other arrays",
+    choice3: "3. booleans",
+    choice4: "4. all of the above",
+    answer: "4. all of the above",
+  },
+
+  {
+    question: "String values must be enclosed within ________ when being assigned to values.",
+    choice1: "1. commas",
+    choice2: "2. curly brackets",
+    choice3: "3. quotes",
+    choice4: "4. parenthesis",
+    answer: "3. quotes",
+  },
+
+  {
+    question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+    choice1: "1. JavaScript",
+    choice2: "2. terminal/bash",
+    choice3: "3. for loops",
+    choice4: "4. console log",
+    answer: "4. console log",
+  }
 ];
